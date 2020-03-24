@@ -1,0 +1,27 @@
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"
+style="border:1px solid #000;">
+<script>
+var canvas = document.getElementById("myCanvas");
+var c = canvas.getContext("2d");
+//TRIANGLE
+c.beginPath();
+c.moveTo(150, 50);
+c.lineTo(100, 150);
+c.lineTo(200, 150);
+c.closePath();
+c.lineWidth = 10;
+c.strokeStyle = '#F5185E';
+c.fillStyle = "#8080BA";
+c.stroke();
+c.fill();
+//RECTANGLE
+c.fillStyle = "#8080BA";
+c.fillRect(95,180,110,60);
+c.strokeStyle = '#F5185E';
+c.lineWidth = 5;
+c.strokeRect(95,180,110,60);
+</script>
+</body>
+</html>
